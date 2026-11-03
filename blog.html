@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What's News | Rock Garden Herbs</title>
+  <title>Blog | Rock Garden Herbs</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
   <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="home.html" class="logo">
+      <a href="index.html" class="logo">
         <img src="images/logo.png" alt="Rock Garden Logo">
       </a>
 
@@ -25,9 +25,9 @@
 
       <nav class="main-nav" aria-label="Main">
         <ul>
-          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li class="has-sub">
-            <a href="news.html" class="active">What&#x27;s News</a>
+            <a href="news.html">What&#x27;s News</a>
             <ul class="sub">
               <li><a href="news.html#new-building">New Building</a></li>
               <li><a href="news.html#gopex">GOPEX Trade Show</a></li>
@@ -66,7 +66,7 @@
               <li><a href="social-media.html">Social Media</a></li>
             </ul>
           </li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
         </ul>
       </nav>
     </div>
@@ -75,51 +75,49 @@
   <main>
     <section class="page-banner">
       <div class="container">
-        <h1>What's News</h1>
-        <p>The latest from Rock Garden</p>
-        <nav class="page-jump" aria-label="Stories on this page">
-          <a href="#new-building">New Building</a>
-          <a href="#gopex">GOPEX Trade Show</a>
-        </nav>
+        <h1>Blog</h1>
+        <p>All Posts</p>
       </div>
     </section>
 
-    <!-- ===== New Building ===== -->
-    <article class="container story" id="new-building">
-      <h2>Rock Garden Building</h2>
-      <p class="lead">Rock Garden proudly announces the completion of their new 45,000 square foot facility located just west of Miami International Airport. This state of the art facility will allow us to serve our customers in a much more efficient style.</p>
-
-      <div class="gallery">
-        <img src="images/building-1.jpg" alt="Front of the new Rock Garden building">
-        <img src="images/building-2.jpg" alt="Rock Garden facility">
-        <img src="images/building-3.jpg" alt="Rock Garden facility">
-        <img src="images/building-4.jpg" alt="Rock Garden facility">
-        <img src="images/building-5.jpg" alt="Rock Garden facility">
-        <img src="images/building-6.jpg" alt="Rock Garden facility">
+    <section class="container section">
+      <input class="blog-search" type="search" placeholder="Search posts" aria-label="Search posts">
+      <div class="posts">
+        <a class="post" href="post-love-herbs.html">
+          <img src="images/blog-love-herbs.jpg" alt="" loading="lazy">
+          <span class="post-body">
+            <span class="post-meta">rockgardenwebsite · Sep 23, 2021 · 1 min read</span>
+            <strong>We LOVE herbs and here&#x27;s why YOU should too</strong>
+            <span>SAGE IS BELIEVED TO IMPROVE BRAIN FUNCTION AND MEMORY Did you know that Sage comes from the Latin word Salvare which means &quot;to save&quot;?...</span>
+          </span>
+        </a>
+        <a class="post" href="post-store-herbs.html">
+          <img src="images/blog-store-herbs.jpg" alt="" loading="lazy">
+          <span class="post-body">
+            <span class="post-meta">rockgardenwebsite · Aug 30, 2021 · 1 min read</span>
+            <strong>How to Store Fresh Herbs</strong>
+            <span>There are different ways to store herbs. They mostly fall under two categories: hard woody herbs and soft leafy herbs. Hard woody Herbs...</span>
+          </span>
+        </a>
+        <a class="post" href="post-mint-mojito.html">
+          <img src="images/img-9124.jpg" alt="" loading="lazy">
+          <span class="post-body">
+            <span class="post-meta">rockgardenwebsite · Aug 30, 2021 · 1 min read</span>
+            <strong>Rock Garden Mint Mojito Recipe</strong>
+            <span>What’s in a Mojito? Rock Garden Fresh mint simple syrup one part sugar one part water, simmer until dissolved Lime wedges: Fresh squeezed...</span>
+          </span>
+        </a>
+        <a class="post" href="post-turmeric.html">
+          <img src="images/turmeric.jpg" alt="" loading="lazy">
+          <span class="post-body">
+            <span class="post-meta">rockgardenwebsite · Aug 30, 2021 · 1 min read</span>
+            <strong>All you need to know about Turmeric</strong>
+            <span>Turmeric is a flowering plant, Curcuma longa of the ginger family cultivated from rhizomes, or root, used in cooking. Turmeric has gained...</span>
+          </span>
+        </a>
       </div>
-    </article>
-
-    <!-- ===== GOPEX ===== -->
-    <article class="container story" id="gopex">
-      <h2>Global Organic Produce Expo</h2>
-
-      <div class="gallery">
-        <img src="images/gopex-1.jpg" alt="Rock Garden booth at GOPEX">
-        <img src="images/gopex-2.jpg" alt="Rock Garden booth at GOPEX">
-        <img src="images/gopex-3.jpg" alt="Sampling of Rock Garden products at GOPEX">
-      </div>
-      <p class="lead">The GOPEX trade show was on January 9-11, 2020 at the Fontainebleau on Miami beach. Pictured above is our booth with a sampling of our products.</p>
-
-      <div class="feature">
-        <div class="feature-text">
-          <h3>Antoni Porowski</h3>
-          <p class="sub-head">the food and wine guru from the Netflix show Queer Eye</p>
-          <p>made an appearance at the Global Organic Produce Expo which was an amazing experience since his upbeat personality and his passion for food and creating new ideas was so fascinating and knowledgeable.</p>
-        </div>
-        <img src="images/antoni-2.jpg" alt="Antoni Porowski at GOPEX">
-      </div>
-      <img class="wide" src="images/antoni-1.jpg" alt="Antoni Porowski speaking on stage at GOPEX">
-    </article>
+      <p class="no-results" hidden>No posts match your search.</p>
+    </section>
   </main>
 
   <!-- ===== Footer ===== -->
