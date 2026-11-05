@@ -1051,6 +1051,15 @@ main > .grow-feature:last-child { padding-bottom: 72px; }
 }
 
 /* ===== Responsive ===== */
+/* Narrow laptops: keep the larger logo and full menu on one row */
+@media (max-width: 1200px) {
+  .logo img { height: 52px; }
+  .logo-name { font-size: 24px; }
+  .logo-sub { font-size: 12px; }
+  .logo-tag { font-size: 10px; }
+  .main-nav a { padding: 8px 9px; font-size: 14px; }
+}
+
 @media (max-width: 960px) {
   .nav-toggle { display: block; }
 
