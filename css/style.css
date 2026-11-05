@@ -79,7 +79,35 @@ h1, h2, h3, h4 {
   min-height: 96px;
 }
 
-.logo img { height: 72px; width: auto; }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.logo img { height: 64px; width: auto; }
+.logo-text { display: flex; flex-direction: column; line-height: 1.1; white-space: nowrap; }
+.logo-name {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: -.02em;
+  line-height: 1;
+  color: #0d4c92;
+}
+.logo-sub {
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #0b9645;
+}
+.logo-bar { color: #0d4c92; font-weight: 400; }
+.logo-tag {
+  margin-top: 2px;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: #77787b;
+}
 
 .main-nav > ul {
   display: flex;
@@ -1053,7 +1081,10 @@ main > .grow-feature:last-child { padding-bottom: 72px; }
   }
 
   .sub::before { display: none; }
-  .logo img { height: 56px; }
+  .logo img { height: 52px; }
+  .logo-name { font-size: 24px; }
+  .logo-sub { font-size: 12px; }
+  .logo-tag { font-size: 10px; }
   .header-inner { min-height: 76px; }
 
   .hero { grid-template-columns: 1fr; }
